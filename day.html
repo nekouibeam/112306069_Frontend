@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date Picker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+<label for="datepicker">選擇日期:</label>
+<input type="date" id="datepicker">
+
+<script>
+  // 簡單的JavaScript代碼，當日期發生變化時觸發
+  const datePicker = document.getElementById('datepicker');
+
+  datePicker.addEventListener('change', (event) => {
+    const selectedDate = event.target.value;
+    console.log(`選擇的日期是: ${selectedDate}`);
+    // 這裡可以添加你想要執行的其他代碼
+  });
+</script>
+
+</body>
+</html>
